@@ -28,10 +28,13 @@
 -include device/htc/t6-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := t6wl,t6vzw
+TARGET_OTA_ASSERT_DEVICE := t6dwg
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := t6wl
+TARGET_BOOTLOADER_BOARD_NAME := t6dwg
+
+# RIL
+SIM_COUNT := 2
 
 # inherit from the proprietary version
--include vendor/htc/t6vzw/BoardConfigVendor.mk
+-include vendor/htc/t6dwg/BoardConfigVendor.mk
